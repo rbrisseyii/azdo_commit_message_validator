@@ -28,6 +28,9 @@ runs:
       id: pr-issues-validation
       shell: bash
       run: |
+        pwd
+        ls -a
+        
         PULL_NUMBER=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
         COMMITS=$(curl -s -H 'Authorization: Bearer ${{ inputs.github-token }}' -H "Accept: application/vnd.github.v3+json" "${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/pulls/${PULL_NUMBER}/commits")
         echo $COMMITS | jq -c '.[]' | while read commit; do
