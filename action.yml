@@ -32,6 +32,8 @@ runs:
       id: pr-issues-validation
       shell: bash
       run: |
+        set -euxo pipefail
+
         # have to do some hocus pocus since this isn't a full javascript action
         main=$(find ~/work/_actions/joshjohanning/azdo_commit_message_validator -name "main.js" | egrep -v "node_modules|test")
         echo $main
