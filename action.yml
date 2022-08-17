@@ -34,8 +34,10 @@ runs:
       run: |
         set -euxo pipefail
 
+        ls -R ~/work/_actions/joshjohanning/azdo_commit_message_validator
+
         # have to do some hocus pocus since this isn't a full javascript action
-        main=$(find ~/work/_actions/joshjohanning/azdo_commit_message_validator -name "main.js" | egrep -v "node_modules|test")
+        main=$(find ~/work/_actions/joshjohanning/azdo_commit_message_validator -name "main.js" | grep -v "node_modules")
         echo $main
 
         PULL_NUMBER=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
