@@ -1,4 +1,6 @@
 {
     "vscode-pull-requests-azure-devops.collection": "https://dev.azure.com/blackbaud/Products",
-    "vscode-pull-requests-azure-devops.access-token": "cb6lortnkgjy3f6jt7blxrlmvml2ugzbf5532bj4x2xrom4zq2sq"
+    "vscode-pull-requests-azure-devops.access-token": "cb6lortnkgjy3f6jt7blxrlmvml2ugzbf5532bj4x2xrom4zq2sq",
+    "azure-work-management.personal-access-token": "2ijbg5i2ag3t67jhgsahq3nl23rjes3jlh4diunrl5ziqrerjyca",
+    "planner.azure-devops.token": "cb6lortnkgjy3f6jt7blxrlmvml2ugzbf5532bj4x2xrom4zq2sq"
 }
